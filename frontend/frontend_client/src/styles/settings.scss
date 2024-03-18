@@ -1,0 +1,75 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+@use 'vuetify/settings' with (
+  $expansion-panel-title-padding: 8px 4px 8px 12px,
+  $expansion-panel-title-min-height: 28px,
+  $expansion-panel-active-title-min-height: 28px,
+  $expansion-panel-text-padding: 0px,
+  $expansion-panel-border-radius: 0,
+  $expansion-panel-title-font-size: 1rem,
+  $button-color: #00adef
+);
+$primary-color: #00adef;
+
+html {
+  // overflow-y: auto;
+  overflow: auto !important; /* Hide scrollbars */
+  scroll-behavior: smooth;
+}
+
+html * {
+  scroll-behavior: smooth;
+}
+
+.v-btn {
+  text-transform: none;
+}
+
+.login-signup-logo {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:link:active,
+a:visited:active {
+  color: #00adef;
+}
+
+.or {
+  text-align: center;
+  font-size: 18px;
+  background: linear-gradient(#000 0 0) left, linear-gradient(#000 0 0) right;
+  background-size: 40% 1px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 960px) {
+  .text-md-h4 {
+    font-size: 28px !important;
+  }
+}
+.password__details {
+  font-size: 15px;
+  font-weight: 400;
+  vertical-align: center;
+}
+
+.password__details div.pl-sm-1 > span {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.password__details div.pl-sm-1 > span i {
+  padding-right: 6px;
+}

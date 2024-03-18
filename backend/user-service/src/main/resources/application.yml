@@ -1,0 +1,47 @@
+server:
+  port: 8082
+
+spring:
+  .mvc:
+    async:
+      request-timeout: 100000
+  profiles:
+    active: ${ACTIVE_PROFILE:dev}
+  main:
+    allow-circular-references: true
+  datasource:
+    url:  jdbc:mysql://${MYSQL_HOST:localhost}:3308/re_user_service?createDatabaseIfNotExist=true
+    username: ###
+    password: ###
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        format_sql:true
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  application:
+    name: USER-SERVICE
+    security:
+      jwt:
+        secret-key: ###
+        expiration: 86400000 # a day
+        refresh-token:
+          expiration: 604800000 # 7 days
+        expiration-reset-password: 3600000 # 1 hour
+    cross-origin: http://localhost:3000 # front end
+    drive-api:
+      client-id: ###
+      client-secret: ###
+    avatar-default: ###
+    check-email-url: ###
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/

@@ -1,0 +1,26 @@
+{
+  "name": "google-translate-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^9.2.0",
+    "cors": "^2.8.5",
+    "eureka-js-client": "^4.5.0",
+    "express": "^4.18.2",
+    "fetch": "^1.1.0",
+    "google-tts-api": "^2.0.2",
+    "http-proxy-agent": "^7.0.0",
+    "jsdom": "^22.1.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4"
+  }
+}

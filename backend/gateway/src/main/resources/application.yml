@@ -1,0 +1,53 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        add-to-simple-url-handler-mapping: true
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods: "*"
+      routes:
+        - id: document-service
+          uri: lb://DOCUMENT-SERVICE
+          predicates:
+            - Path=/api/user/collection/**,/api/user/document/**
+          filters:
+            - AuthenticationFilter
+
+
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/api/user/account/**, /api/auth/logout, /api/admin/admin1/**, /api/admin/admin2/**
+          filters:
+            - AuthenticationFilter
+
+        - id: identity-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/api/auth/**, !/api/auth/logout, /api/admin/auth/**
+
+        - id: translate-service
+          uri: lb://TRANSLATE-SERVICE
+          predicates:
+            - Path=/api/translate
+          filters:
+            - AuthenticationFilter
+
+        - id: email-service
+          uri: lb://EMAIL-SERVICE
+          predicates:
+            - Path=/api/email/**
+
+  application:
+    name: READEASE-GATEWAY
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/
