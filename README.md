@@ -5,10 +5,10 @@
 
 ReadEase - A web application based on microservices architecture that allows users to read, note, highlight, translate languages, etc. while reading document, as well as divide documents into collections and store them on Google Drive via Google Drive API.
 
-Actors and features:
-* <b>User</b>: Login, Signup, Continue with Google, Document Manager, Collection Manager, Note, Highlight, Translate, Account Setting, etc.
-* <b>Admin level 2</b>: Login, New account creation statistics, statistics of the number of selected languages translated into, view user account information, Account Setting.
-* <b>Admin level 1</b>: Login, New account creation statistics, statistics of the number of selected languages translated into, view user account information, Manage Level 2 Administrator Account, Account Setting.
+Actors and main features:
+* <b>User</b> : Login, Signup, Continue with Google, Document Manager, Collection Manager, Note, Highlight, Translate, Account Setting, etc.
+* <b>Admin level 2</b> : Login, New account creation statistics, statistics of the number of selected languages translated into, view user account information, Account Setting.
+* <b>Admin level 1</b> : Login, New account creation statistics, statistics of the number of selected languages translated into, view user account information, Manage Level 2 Administrator Account, Account Setting.
 
 Video demo : [https://youtu.be/nKhqsSTrWl0](https://youtu.be/nKhqsSTrWl0)
 
