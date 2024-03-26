@@ -7,8 +7,8 @@ ReadEase - A web application based on microservices architecture that allows use
 
 Actors and main features:
 * <b>User</b> : Login, Signup, Continue with Google, Document Manager, Collection Manager, Note, Highlight, Translate, Account Setting, etc.
-* <b>Admin level 2</b> : Login, New account creation statistics, statistics of the number of selected languages translated into, view user account information, Account Setting.
-* <b>Admin level 1</b> : Login, New account creation statistics, statistics of the number of selected languages translated into, view user account information, Manage Level 2 Administrator Account, Account Setting.
+* <b>Admin level 2</b> : Login, New account creation statistics, Statistics of the number of selected languages translated into, View user account information, Account Setting.
+* <b>Admin level 1</b> : Login, New account creation statistics, Statistics of the number of selected languages translated into, View user account information, Manage Level 2 Administrator Account, Account Setting.
 
 Video demo : [https://youtu.be/nKhqsSTrWl0](https://youtu.be/nKhqsSTrWl0)
 
