@@ -27,6 +27,7 @@ Video demo : [https://youtu.be/nKhqsSTrWl0](https://youtu.be/nKhqsSTrWl0)
 
 ## Entity relationship diagram
 ![ERD Screen Shot][entity-relationship-diagram]
+* <b>Annotation</b> entity based on [Web Annotations Data Model](https://developer.adobe.com/document-services/docs/overview/pdf-embed-api/howtos_comments/#annotation-schema).
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [product-screenshot]: images/[ReadEase]%20Demo.png
